@@ -18,7 +18,7 @@ void insertar(nodo** raiz, char* cadena) {
 	int x=strcmp(actual->nombre,cadena);
 		if (x>0)
 		{
-			if(actual=*raiz){
+			if(actual==*raiz){
 				nuevo->siguiente=actual;
 				actual->anterior=nuevo;
 				*raiz=nuevo;
